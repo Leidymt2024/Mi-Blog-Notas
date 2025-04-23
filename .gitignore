@@ -1,0 +1,14 @@
+# node modules (nunca subirlos)
+node_modules/
+
+# build de producción (si usas Vite o React build)
+dist/
+
+# sistema y entorno
+.env
+.DS_Store
+*.log
+
+# IDEs
+.vscode/
+.idea/

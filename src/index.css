@@ -1,0 +1,202 @@
+/* ESTILOS GENERALES */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(45deg, #f59279, #fdba86);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite; 
+  height: 100vh; /* Asegura que el fondo cubra toda la página */ }
+  
+
+/* Animación del fondo */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.app-container {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; 
+  max-width: 400px;
+  margin: 2rem auto; 
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.contador {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.contador strong {
+  font-weight: bold;
+  font-size: 1rem; 
+  color: #333; 
+}
+
+/* Estilos para la tarjeta de nota */
+.nota-card {
+  background-color: #f9f9f9; 
+  border-radius: 1rem; 
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 300px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+ .notas-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+  }
+
+.nota-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* Estilos para el título de la nota */
+.nota-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+/* Estilos para el contenido de la nota */
+.nota-card p {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Botones centrados y con estilos */
+.nota-card button {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 40%;
+  margin: 0.1rem;
+}
+
+.nota-card .btn-editar {
+  background-color: #4caf50; 
+  color: white;
+}
+
+.nota-card .btn-editar:hover {
+  background-color: #66bb6a; 
+}
+
+.nota-card .btn-eliminar {
+  background-color: #f44336; 
+  color: white;
+}
+
+.nota-card .btn-eliminar:hover {
+  background-color: #ef5350; 
+}
+
+.nota-card button:first-child {
+  margin-right: 1rem;
+
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .nota-card {
+    width: 90%; /* Hace que las tarjetas ocupen más espacio en pantallas pequeñas */
+  }
+}
+
+/* Estilos base (desktop primero o mobile first) */
+
+  .blog-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+  }
+ 
+  /* En móviles se apilan */
+@media (max-width: 768px) {
+  .blog-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* RESPONSIVE TABLET */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  form {
+    max-width: 90%;
+  }
+
+  .blog-card {
+    width: 90%;
+  }
+}
+
+/* RESPONSIVE MÓVIL */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .blog-card {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+}
