@@ -38,9 +38,7 @@ Abre tu navegador en http://localhost:5173 para ver el proyecto.
 
 ---
 
-### 🧾 Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para más información.
 
 
 
